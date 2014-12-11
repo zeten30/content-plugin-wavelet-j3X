@@ -1,0 +1,6 @@
+#!/bin/bash
+# Create zip package for joomla install manager
+version=$(grep '<version>' wavelet.xml | sed -e 's/<[a-z\/]*>//g' | sed -e 's/ *//g')
+
+rm dist/plg_wavelet-3X-*.zip
+zip -r dist/plg_wavelet-3X-${version}.zip *.ini index.html wavelet.php wavelet.xml

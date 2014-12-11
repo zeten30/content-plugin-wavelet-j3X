@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>plg_content_wavelet</name>
+    <author>Milan Zink</author>
+    <creationDate>December 2014</creationDate>
+    <copyright>none</copyright>
+    <license>GPL</license>
+    <authorEmail>zeten30@gmail.com</authorEmail>
+    <authorUrl>https://sites.google.com/site/zeten30/</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_CONTENT_WAVELET_XML_DESCRIPTION</description>
+    
+    <files>
+        <filename plugin="wavelet">wavelet.php</filename>
+        <filename>index.html</filename>
+    </files>
+    
+    <languages>
+        <language tag="cs-CZ">cs-CZ.plg_content_wavelet.ini</language>
+        <language tag="cs-CZ">cs-CZ.plg_content_wavelet.sys.ini</language>
+        <language tag="en-GB">en-GB.plg_content_wavelet.ini</language>
+        <language tag="en-GB">en-GB.plg_content_wavelet.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="preps" type="list" default="1" label="PLG_CONTENT_WAVELET_HANDLE_PREPS" description="PLG_CONTENT_WAVELET_HANDLE_PREPS_DESC">        
+                    <option value="1">PLG_CONTENT_WAVELET_YES</option>
+                    <option value="0">PLG_CONTENT_WAVELET_NO</option>
+                </field>
+                <field name="units" type="list" default="1" label="PLG_CONTENT_WAVELET_HANDLE_UNITS" description="PLG_CONTENT_WAVELET_HANDLE_UNITS_DESC">        
+                    <option value="1">PLG_CONTENT_WAVELET_YES</option>
+                    <option value="0">PLG_CONTENT_WAVELET_NO</option>
+                </field>
+                <field name="titles" type="list" default="1" label="PLG_CONTENT_WAVELET_HANDLE_TITLES" description="PLG_CONTENT_WAVELET_HANDLE_TITLES_DESC">        
+                    <option value="1">PLG_CONTENT_WAVELET_YES</option>
+                    <option value="0">PLG_CONTENT_WAVELET_NO</option>
+                </field>
+                <field name="num_groups" type="list" default="1" label="PLG_CONTENT_WAVELET_NUMGROUPS_PREPS" description="PLG_CONTENT_WAVELET_HANDLE_NUMGROUPS_DESC">        
+                    <option value="1">PLG_CONTENT_WAVELET_YES</option>
+                    <option value="0">PLG_CONTENT_WAVELET_NO</option>
+                </field>
+                <field name="deg_perc" type="list" default="1" label="PLG_CONTENT_WAVELET_HANDLE_DEGPERC" description="PLG_CONTENT_WAVELET_HANDLE_DEGPERC_DESC">        
+                    <option value="1">PLG_CONTENT_WAVELET_YES</option>
+                    <option value="0">PLG_CONTENT_WAVELET_NO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
